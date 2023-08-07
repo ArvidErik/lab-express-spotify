@@ -1,22 +1,22 @@
 
-<table>
-     <table>
-    <thead>
-      <tr>
-        <th>Title</th>
-        <th>Listen</th>
-      </tr>
-    </thead>
-    <tbody>
-      {{#each tracks}}
-        <tr>
-          <td>{{ name }}</td>
-          <td>
-            <audio controls src={{  preview_url  }}>play</audio>
-          </td>
-        </tr>
-      {{/each}}
-    </tbody>
-  </table>
+<h1 class="mx-auto p-2" style="width: 200px;">Tracks</h1>
+<div class="">
+<table class="table table-success align-middle">
+  <thead>
+    <tr>
+      <th scope="col">Title</th>
+      <th scope="col">Listen</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each tracks}}
+    <tr>
+      <td>{{ name }}</td>
+      <td><audio controls src={{  preview_url  }}>play</audio></td>
+    </tr>
+    {{/each}}
+  </tbody>
 </table>
+</div>
+
 

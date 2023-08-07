@@ -40,7 +40,7 @@ app.get("/artist-search", (req, res) => {
       console.log(`Search artists by ${query}`, data.body.artists);
       const artists = data.body.artists;
       console.log(artists.items[0]);
-      res.render("artist-search-results", { artists });
+      res.render("artistSearchResults", { artists });
     })
     .catch(function (err) {
       console.error(err);
